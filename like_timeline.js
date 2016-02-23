@@ -1,3 +1,5 @@
+location.href='http://instagram.com/';
+
 function sleepFor( sleepDuration ){
     var now = new Date().getTime();
     while(new Date().getTime() < now + sleepDuration){ /* do nothing */ }
@@ -8,6 +10,7 @@ function getRandom(min, max) {
 }
 
 function like_and_load() {
+    console.log('like + load');
     var hearts = document.getElementsByClassName("coreSpriteHeartOpen");
     for (j = 0; j < hearts.length; j++) {
         hearts[j].click();
